@@ -34,7 +34,9 @@ export default function Home() {
       <main className="mx-auto max-w-4xl px-4">
         <section id="about" className="py-20 sm:py-28">
           <p className="font-mono text-emerald-400">Hi, I&apos;m</p>
-          <h1 className="mt-2 text-4xl font-bold text-white sm:text-6xl">{profile.name}</h1>
+          <h1 className="mt-2 text-4xl font-bold text-white sm:text-6xl">
+            {profile.name} <span className="text-slate-500">({profile.nickname})</span>
+          </h1>
           <p className="mt-3 text-xl text-slate-400 sm:text-2xl">{profile.role}</p>
           <p className="mt-6 max-w-2xl leading-relaxed">{profile.summary}</p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -145,13 +147,19 @@ export default function Home() {
 
         <Section id="contact" title="Contact">
           <p className="max-w-xl leading-relaxed">
-            Open to new opportunities. The fastest way to reach me is by email.
+            Open to new opportunities. Feel free to reach me by email or phone.
           </p>
           <a
             href={`mailto:${profile.email}`}
             className="mt-6 inline-block text-xl font-semibold text-white underline decoration-emerald-500 underline-offset-4 hover:text-emerald-400"
           >
             {profile.email}
+          </a>
+          <a
+            href={profile.phoneHref}
+            className="mt-3 block w-fit text-xl font-semibold text-white underline decoration-emerald-500 underline-offset-4 hover:text-emerald-400"
+          >
+            {profile.phone}
           </a>
         </Section>
       </main>

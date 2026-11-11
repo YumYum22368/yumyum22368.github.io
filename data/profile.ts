@@ -10,10 +10,13 @@ export type Project = {
 
 export const profile = {
   name: "Methe Sriwongkorakod",
+  nickname: "T",
   role: "Full Stack Developer · DevOps",
   summary:
     "Full Stack Developer with 3 years of experience building web and mobile applications in TypeScript, React/Next.js and Node.js. Most recently I worked on TIFFA EzySuite, a customs declaration platform for import/export businesses, across the front end, back-end services and deployment.",
   email: "methe22368@gmail.com",
+  phone: "095-834-8228",
+  phoneHref: "tel:+66958348228",
   github: "https://github.com/YumYum22368",
 };
 
